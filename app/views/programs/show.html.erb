@@ -1,0 +1,16 @@
+<h1>Listing meals for <%= @programs[0].condition.name %>  </h1>
+<table>
+  <tr>
+    <th>Meal</th>
+      </tr>
+
+<% for program in @programs %>
+  <tr>
+    
+    <td><%=h program.meal.name %></td>
+
+  </tr>
+<% end %>
+</table>
+
+
